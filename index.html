@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Carl Marco Vaporoso — Computer Science student focused on Python, AI, computer vision, and web development." />
+  <title>Carl Marco Regala Vaporoso</title>
+
+  <link rel="icon" type="image/png" href="LOGO/cmv-emblem-web.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       SIDEBAR
+  ============================================================ -->
+  <aside class="sidebar" id="sidebar">
+    <a href="#home" class="nav-logo" aria-label="CMV — Home">
+      <img class="brand-logo" src="LOGO/cmv-emblem-web.png" alt="" />
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+      <a href="#home"         class="nav-link" data-section="home"><i class="ph ph-house"></i><span>Home</span></a>
+      <a href="#about"        class="nav-link" data-section="about"><i class="ph ph-user"></i><span>About Me</span></a>
+      <a href="#skills"       class="nav-link" data-section="skills"><i class="ph ph-code"></i><span>Skills</span></a>
+      <a href="#projects"     class="nav-link" data-section="projects"><i class="ph ph-rocket-launch"></i><span>Projects</span></a>
+      <a href="#education"    class="nav-link" data-section="education"><i class="ph ph-graduation-cap"></i><span>Education</span></a>
+      <a href="#certificates" class="nav-link" data-section="certificates"><i class="ph ph-certificate"></i><span>Certificates</span></a>
+      <a href="#photos"       class="nav-link" data-section="photos"><i class="ph ph-images"></i><span>Photos</span></a>
+      <a href="#contact"      class="nav-link" data-section="contact"><i class="ph ph-envelope-simple"></i><span>Contact</span></a>
+    </nav>
+
+    <button class="nav-theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+      <i class="ph ph-sun" aria-hidden="true"></i>
+      <span>Light mode</span>
+    </button>
+  </aside>
+
+  <!-- Hamburger toggle for mobile -->
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="home">
+      <!-- Background elements -->
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-shape hero-shape--1" aria-hidden="true"></div>
+      <div class="hero-shape hero-shape--2" aria-hidden="true"></div>
+      <div class="hero-shape hero-shape--3" aria-hidden="true"></div>
+
+      <div class="hero-container">
+        <!-- LEFT: Text -->
+        <div class="hero-left reveal-left">
+          <div class="hero-badge">
+            <span class="badge-pulse" aria-hidden="true"></span>
+            <span>Computer Science student · Building with purpose</span>
+          </div>
+
+          <h1 class="hero-name">
+            👋 Hi I'm<br>
+            <span class="text-orange">Carl Marco R. Vaporoso</span>
+          </h1>
+
+          <p class="hero-tagline">
+            Building Intelligent Solutions<br>for Real-World Problems.
+          </p>
+
+          <p class="hero-typewriter">
+            I am a <span id="typewriter"></span><span class="typewriter-cursor">|</span>
+          </p>
+
+          <p class="hero-bio">
+            I'm a Computer Science student interested in Python programming, artificial intelligence,
+            computer vision, and web development. I enjoy exploring new technologies and developing
+            projects that aim to solve real-world problems.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+              <i class="ph ph-rocket-launch"></i> Explore My Projects
+            </a>
+            <a href="#contact" class="btn-outline">
+              <i class="ph ph-paper-plane-tilt"></i> Get in touch
+            </a>
+          </div>
+
+          <div class="hero-chips">
+            <span class="chip"><i class="ph ph-code"></i> Python</span>
+            <span class="chip"><i class="ph ph-brain"></i> AI / ML</span>
+            <span class="chip"><i class="ph ph-eye"></i> Computer Vision</span>
+            <span class="chip"><i class="ph ph-globe"></i> Web Dev</span>
+          </div>
+        </div>
+
+        <!-- RIGHT: Visual with profile photo -->
+        <div class="hero-right reveal-right" aria-hidden="false">
+          <div class="hero-visual">
+            <!-- Orbit rings -->
+            <div class="orbit orbit--1"></div>
+            <div class="orbit orbit--2"></div>
+            <div class="orbit orbit--3"></div>
+
+            <!-- Profile photo in blue circle -->
+            <div class="hero-photo-ring">
+              <img
+                src="about%20me%20picture/profile.jpg"
+                alt="Carl Marco Vaporoso"
+                class="hero-photo"
+                loading="eager"
+              />
+            </div>
+
+            <!-- Floating tech nodes -->
+            <div class="tech-node tech-node--1"><i class="ph ph-brain"></i></div>
+            <div class="tech-node tech-node--2"><i class="ph ph-eye"></i></div>
+            <div class="tech-node tech-node--3"><i class="ph ph-code"></i></div>
+            <div class="tech-node tech-node--4"><i class="ph ph-cpu"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down" aria-label="Scroll to About">
+        <i class="ph ph-arrow-down"></i>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         ABOUT ME
+    ============================================================ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Who I Am</span>
+          <h2 class="section-title">About <span class="text-orange">Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Photo card -->
+          <div class="about-photo-col">
+            <div class="about-photo-frame">
+              <img
+                src="home%20profile%20pic/ef3090d8-e306-4efa-bee7-a1f4834631a9.jpg"
+                alt="Carl Marco Vaporoso"
+                class="about-photo"
+                loading="lazy"
+              />
+            </div>
+            <div class="about-name-card">
+              <h3>Carl Marco Vaporoso</h3>
+              <p class="text-orange">B.S. Computer Science</p>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="about-text-col">
+            <p class="about-desc">
+              My name is Carl Marco Vaporoso, and I am a Bachelor of Science in Computer Science
+              student with an interest in technology and software development. I am particularly
+              interested in Python, artificial intelligence, computer vision, and web development.
+            </p>
+            <p class="about-desc">
+              Through my academic work and projects, I continue to learn how technology can be used
+              to address practical problems. My goal is to improve my programming skills, gain
+              practical experience, and develop useful and innovative applications.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight">
+                <div class="highlight-icon"><i class="ph ph-graduation-cap"></i></div>
+                <div>
+                  <strong>Currently Pursuing</strong>
+                  <span>B.S. Computer Science</span>
+                </div>
+              </div>
+              <div class="highlight">
+                <div class="highlight-icon"><i class="ph ph-heart"></i></div>
+                <div>
+                  <strong>Interests</strong>
+                  <span>AI · Computer Vision · Web Dev · Python</span>
+                </div>
+              </div>
+              <div class="highlight">
+                <div class="highlight-icon"><i class="ph ph-target"></i></div>
+                <div>
+                  <strong>Focus</strong>
+                  <span>Practical, Real-World Solutions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS
+    ============================================================ -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What I Work With</span>
+          <h2 class="section-title">Skills &amp; <span class="text-orange">Technologies</span></h2>
+          <p class="section-sub">Technologies and concepts I'm currently learning and applying through academic projects.</p>
+        </div>
+
+        <!-- Programming & Web -->
+        <div class="skills-category">
+          <h3 class="skills-cat-label">
+            <i class="ph ph-code-simple"></i>
+            Programming &amp; Web Development
+          </h3>
+          <div class="skills-grid">
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M15.9 3C10.4 3 10.7 5.4 10.7 5.4l.01 2.5h5.3v.75H8.6S5 8.28 5 13.85s3.15 5.39 3.15 5.39H9.9v-2.59s-.09-3.15 3.1-3.15h5.35s3 .05 3-2.9V6.05S21.9 3 15.9 3zm-3 1.73c.54 0 .97.44.97.98s-.43.97-.97.97a.97.97 0 0 1-.97-.97c0-.54.43-.98.97-.98z" fill="#387EB8"/>
+                  <path d="M16.1 29c5.5 0 5.2-2.4 5.2-2.4l-.01-2.5h-5.3v-.75h7.41S27 24.22 27 18.15 23.85 12.76 23.85 12.76H22.1v2.59s.09 3.15-3.1 3.15h-5.35s-3-.05-3 2.9v4.55S10.1 29 16.1 29zm3-1.73a.97.97 0 0 1-.97-.98c0-.54.43-.97.97-.97s.97.43.97.97a.97.97 0 0 1-.97.98z" fill="#FFE052"/>
+                </svg>
+              </div>
+              <h4>Python</h4>
+              <p>General-purpose scripting, automation, and AI/ML projects</p>
+            </div>
+
+            <div class="skill-card skill-card--featured">
+              <div class="skill-icon">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M5 3l2.05 23.04L16 28l8.94-1.96L27 3H5zm18.12 5.5H9.88l.36 4h12.52l-1.07 11.95L16 25.86l-5.7-1.41-.39-4.36h3.9l.2 2.18 2 .5 1.98-.5.2-2.37H9.75l-1.07-12h14.64z" fill="#E44D26"/>
+                </svg>
+              </div>
+              <h4>HTML5</h4>
+              <p>Semantic markup, structure, and web accessibility</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M5 3l2.05 23.04L16 28l8.94-1.96L27 3H5zm15.75 8H11.5l.25 2.75h8.75L19.5 21l-3.5.97-3.49-.97-.25-2.53H14l.12 1.36 1.88.52 1.87-.51.2-2.11H11.25L10.75 11H21.5z" fill="#1572B6"/>
+                </svg>
+              </div>
+              <h4>CSS3</h4>
+              <p>Styling, layouts, animations, and responsive design</p>
+            </div>
+
+            <div class="skill-card skill-card--featured">
+              <div class="skill-icon">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="32" height="32" rx="4" fill="#F7DF1E"/>
+                  <path d="M9.5 25.5l2.3-1.4c.45.8.86 1.47 1.84 1.47.94 0 1.54-.37 1.54-1.8V16h2.83v7.8c0 2.97-1.74 4.32-4.28 4.32-2.3 0-3.63-1.19-4.23-2.62zm9.4-.3l2.3-1.34c.6 1 1.38 1.74 2.76 1.74 1.16 0 1.9-.58 1.9-1.38 0-.96-.76-1.3-2.04-1.86l-.7-.3c-2.02-.86-3.36-1.94-3.36-4.22 0-2.1 1.6-3.7 4.1-3.7 1.78 0 3.06.62 3.98 2.24l-2.18 1.4c-.48-.86-1-1.2-1.8-1.2-.82 0-1.34.52-1.34 1.2 0 .84.52 1.18 1.72 1.7l.7.3c2.38 1.02 3.72 2.06 3.72 4.4 0 2.52-1.98 3.9-4.64 3.9-2.6 0-4.28-1.24-5.12-2.88z" fill="#000"/>
+                </svg>
+              </div>
+              <h4>JavaScript</h4>
+              <p>Interactive web experiences and front-end logic</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon skill-icon--accent">
+                <i class="ph ph-device-mobile" aria-hidden="true"></i>
+              </div>
+              <h4>Flutter</h4>
+              <p>Cross-platform mobile app development</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon skill-icon--accent">
+                <i class="ph ph-code" aria-hidden="true"></i>
+              </div>
+              <h4>Dart</h4>
+              <p>Programming language for Flutter applications</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- AI & Computer Vision -->
+        <div class="skills-category">
+          <h3 class="skills-cat-label">
+            <i class="ph ph-brain"></i>
+            Artificial Intelligence &amp; Computer Vision
+          </h3>
+          <div class="skills-grid skills-grid--5">
+
+            <div class="skill-card skill-card--featured">
+              <div class="skill-icon skill-icon--accent">
+                <i class="ph ph-brain"></i>
+              </div>
+              <h4>Artificial Intelligence</h4>
+              <p>Exploring intelligent systems and AI concepts through academic work</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon skill-icon--accent">
+                <i class="ph ph-chart-line-up"></i>
+              </div>
+              <h4>Machine Learning</h4>
+              <p>Learning ML fundamentals, models, and training concepts</p>
+            </div>
+
+            <div class="skill-card skill-card--featured">
+              <div class="skill-icon skill-icon--accent">
+                <i class="ph ph-eye"></i>
+              </div>
+              <h4>Computer Vision</h4>
+              <p>Image processing and visual recognition systems</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon skill-icon--accent">
+                <i class="ph ph-scan"></i>
+              </div>
+              <h4>Object Detection</h4>
+              <p>Real-time detection using YOLO architectures — applied in IntelliGuide</p>
+            </div>
+
+            <div class="skill-card skill-card--featured">
+              <div class="skill-icon skill-icon--accent">
+                <i class="ph ph-images"></i>
+              </div>
+              <h4>Image Classification</h4>
+              <p>Classifying objects in images using deep learning techniques</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS
+    ============================================================ -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What I've Built</span>
+          <h2 class="section-title">Featured <span class="text-orange">Projects</span></h2>
+        </div>
+
+        <!-- ===== INTELLIGUIDE — FEATURED ===== -->
+        <article class="intelliguide-card" id="project-intelliguide" aria-labelledby="ig-title">
+          <div class="ig-featured-badge">
+            <i class="ph ph-star-four"></i> Featured Thesis Project
+          </div>
+
+          <div class="ig-grid">
+            <!-- Left visual — slideshow -->
+            <div class="ig-visual-col">
+
+              <!-- SLIDESHOW -->
+              <div class="ig-slideshow ig-slideshow--perspective" id="igSlideshow">
+
+                <!-- Slides -->
+                <div class="ig-slides">
+                  <div class="ig-slide active">
+                    <img
+                      src="intelliguide%20pictures/8808a0a9-2ba1-4f42-9346-3e1c2f08b987.jpg"
+                      alt="IntelliGuide Camera — real-time motorcycle detection at 2.0m"
+                      loading="eager"
+                    />
+                    <div class="ig-slide-caption">
+                      <i class="ph ph-camera"></i>
+                      Camera Detection — Motorcycle at 2.0m
+                    </div>
+                  </div>
+                  <div class="ig-slide">
+                    <img
+                      src="intelliguide%20pictures/b0501d30-84a4-4ec6-8ac3-797f8b93f837.jpg"
+                      alt="IntelliGuide Navigation Map with saved locations"
+                      loading="lazy"
+                    />
+                    <div class="ig-slide-caption">
+                      <i class="ph ph-map-trifold"></i>
+                      Navigation Map — Saved Locations
+                    </div>
+                  </div>
+                  <div class="ig-slide">
+                    <img
+                      src="intelliguide%20pictures/65bdd917-b22e-4059-912c-bad6a4283a64.jpg"
+                      alt="IntelliGuide Save Location dialog with GPS"
+                      loading="lazy"
+                    />
+                    <div class="ig-slide-caption">
+                      <i class="ph ph-map-pin"></i>
+                      Save Location — GPS Integration
+                    </div>
+                  </div>
+                  <div class="ig-slide">
+                    <img
+                      src="intelliguide%20pictures/0809ef86-453b-4602-8269-5a1d566574ff.jpg"
+                      alt="IntelliGuide Settings — Voice language selection (Bisaya, Tagalog, English)"
+                      loading="lazy"
+                    />
+                    <div class="ig-slide-caption">
+                      <i class="ph ph-speaker-high"></i>
+                      Settings — Voice Language (Tagalog / Bisaya)
+                    </div>
+                  </div>
+                  <div class="ig-slide">
+                    <img
+                      src="intelliguide%20pictures/0c21153e-c4d6-47e3-b590-eb2934ca1097%20(1).jpg"
+                      alt="IntelliGuide Location History"
+                      loading="lazy"
+                    />
+                    <div class="ig-slide-caption">
+                      <i class="ph ph-clock-clockwise"></i>
+                      Location History
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Status badge -->
+                <div class="ig-screenshot-badge">
+                  <span class="detection-dot"></span>
+                  <span id="igBadgeLabel" class="ig-badge-label">Camera Detection — Live Demo</span>
+                </div>
+
+                <!-- Slide counter -->
+                <div class="ig-slide-counter">
+                  <span id="igCurrent" class="ig-slide-current">1</span> / <span id="igTotal">5</span>
+                </div>
+
+                <!-- Progress bar -->
+                <div class="ig-progress" id="igProgress"></div>
+
+                <button class="gallery-arrow gallery-arrow--previous" type="button" aria-label="Previous IntelliGuide picture">
+                  <i class="ph ph-caret-left" aria-hidden="true"></i>
+                </button>
+                <button class="gallery-arrow gallery-arrow--next" type="button" aria-label="Next IntelliGuide picture">
+                  <i class="ph ph-caret-right" aria-hidden="true"></i>
+                </button>
+              </div>
+
+              <!-- Dot indicators -->
+              <div class="ig-dots" id="igDots" role="tablist" aria-label="Screenshot navigation">
+                <button class="ig-dot active" data-slide="0" role="tab" aria-selected="true"  aria-label="Slide 1"></button>
+                <button class="ig-dot"        data-slide="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+                <button class="ig-dot"        data-slide="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+                <button class="ig-dot"        data-slide="3" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+                <button class="ig-dot"        data-slide="4" role="tab" aria-selected="false" aria-label="Slide 5"></button>
+              </div>
+
+              <!-- Workflow diagram -->
+              <div class="ig-workflow">
+                <h4 class="workflow-heading">System Workflow</h4>
+                <div class="workflow-steps">
+                  <div class="wf-step">
+                    <div class="wf-icon"><i class="ph ph-camera"></i></div>
+                    <span>Camera Input</span>
+                  </div>
+                  <i class="ph ph-caret-right wf-arrow"></i>
+                  <div class="wf-step">
+                    <div class="wf-icon"><i class="ph ph-scan"></i></div>
+                    <span>YOLOv8n Detection</span>
+                  </div>
+                  <i class="ph ph-caret-right wf-arrow"></i>
+                  <div class="wf-step">
+                    <div class="wf-icon"><i class="ph ph-brain"></i></div>
+                    <span>CNN-ViT Classification</span>
+                  </div>
+                  <i class="ph ph-caret-right wf-arrow"></i>
+                  <div class="wf-step">
+                    <div class="wf-icon"><i class="ph ph-speaker-high"></i></div>
+                    <span>Audio Feedback</span>
+                  </div>
+                </div>
+                <p class="workflow-note">
+                  <i class="ph ph-info"></i>
+                  A secondary pretrained classifier may be used as a fallback when the primary classifier cannot classify an object, depending on the final implementation.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right info -->
+            <div class="ig-info-col">
+              <h3 class="ig-title" id="ig-title">IntelliGuide</h3>
+              <p class="ig-thesis-label">
+                YOLOv8n-Based Real-Time Obstacle Detection System with Multimodal Feedback for Visually Impaired Persons
+              </p>
+
+              <div class="ig-tag-row">
+                <span class="tag tag--orange">Artificial Intelligence</span>
+                <span class="tag tag--teal">Computer Vision</span>
+                <span class="tag tag--teal">Assistive Technology</span>
+                <span class="tag tag--gray">Python</span>
+              </div>
+
+              <p class="ig-desc">
+                IntelliGuide is an academic thesis project focused on developing a real-time obstacle
+                detection system for visually impaired persons. It aims to identify obstacles in front
+                of the user through a camera and provide audio feedback to help communicate potential
+                obstacles during navigation.
+              </p>
+
+              <h4 class="components-heading">System Components</h4>
+              <div class="components-list">
+                <div class="component">
+                  <div class="component-icon"><i class="ph ph-scan"></i></div>
+                  <div class="component-text">
+                    <strong>YOLOv8n</strong>
+                    <span>Used for detecting obstacles in the camera's field of view.</span>
+                  </div>
+                </div>
+                <div class="component">
+                  <div class="component-icon"><i class="ph ph-brain"></i></div>
+                  <div class="component-text">
+                    <strong>CNN-ViT</strong>
+                    <span>Intended object classification component to identify detected objects.</span>
+                  </div>
+                </div>
+                <div class="component">
+                  <div class="component-icon"><i class="ph ph-arrows-clockwise"></i></div>
+                  <div class="component-text">
+                    <strong>Secondary Classifier</strong>
+                    <span>A pretrained classifier used as fallback when the primary cannot classify an object, depending on final implementation.</span>
+                  </div>
+                </div>
+                <div class="component">
+                  <div class="component-icon"><i class="ph ph-speaker-high"></i></div>
+                  <div class="component-text">
+                    <strong>Multimodal Feedback</strong>
+                    <span>Incorporates recorded Tagalog and Bisaya voice feedback.</span>
+                  </div>
+                </div>
+                <div class="component">
+                  <div class="component-icon"><i class="ph ph-timer"></i></div>
+                  <div class="component-text">
+                    <strong>Four-Second Delay</strong>
+                    <span>System design includes a delay intended to help prevent overlapping or interrupted speech.</span>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== COCOSCAN ===== -->
+        <article class="intelliguide-card" id="project-cocoscan" aria-labelledby="cs-title">
+          <div class="ig-featured-badge">
+            <i class="ph ph-star-four"></i> Featured Project
+          </div>
+
+          <div class="ig-grid">
+            <div class="ig-visual-col">
+              <div class="ig-slideshow ig-slideshow--perspective" id="csSlideshow">
+                <div class="ig-slides">
+                  <div class="ig-slide active">
+                    <img src="coco%20Scan%20pictures/d23c5450-f073-4aa0-bc18-47270c95a0e0.jpg" alt="CocoScan home screen with coconut leaf scan options" loading="eager" />
+                    <div class="ig-slide-caption"><i class="ph ph-leaf"></i> Home — Capture or upload a leaf</div>
+                  </div>
+                  <div class="ig-slide">
+                    <img src="coco%20Scan%20pictures/f7a1a828-dd54-4c96-95a7-8a53bfb42ac8.jpg" alt="CocoScan image upload screen with a coconut leaf preview" loading="lazy" />
+                    <div class="ig-slide-caption"><i class="ph ph-upload-simple"></i> Upload — Preview a leaf image</div>
+                  </div>
+                  <div class="ig-slide">
+                    <img src="coco%20Scan%20pictures/60a976de-a5f2-4023-8a64-8146b54f1ff6.jpg" alt="CocoScan healthy leaf scan result and image preview" loading="lazy" />
+                    <div class="ig-slide-caption"><i class="ph ph-check-circle"></i> Scan result — Healthy leaf</div>
+                  </div>
+                  <div class="ig-slide">
+                    <img src="coco%20Scan%20pictures/cea678d1-88c5-42c0-88f6-8d3fd6ee91ce.jpg" alt="CocoScan scan details, result information, and recommended actions" loading="lazy" />
+                    <div class="ig-slide-caption"><i class="ph ph-clipboard-text"></i> Result details and care recommendations</div>
+                  </div>
+                  <div class="ig-slide">
+                    <img src="coco%20Scan%20pictures/01568c9f-a364-4e71-bc02-b0f2e9a92bd2.jpg" alt="CocoScan scan history with search, filters, and scan statistics" loading="lazy" />
+                    <div class="ig-slide-caption"><i class="ph ph-clock-counter-clockwise"></i> Scan history and statistics</div>
+                  </div>
+                  <div class="ig-slide">
+                    <img src="coco%20Scan%20pictures/ebdbe108-265f-4f2f-af49-bf65c63c74ea.jpg" alt="CocoScan home screen showing recent scan results" loading="lazy" />
+                    <div class="ig-slide-caption"><i class="ph ph-list-bullets"></i> Recent scan results</div>
+                  </div>
+                </div>
+
+                <div class="ig-screenshot-badge">
+                  <span class="detection-dot"></span>
+                  <span id="csBadgeLabel" class="ig-badge-label">Home — Capture or upload a leaf</span>
+                </div>
+
+                <div class="ig-slide-counter">
+                  <span id="csCurrent" class="ig-slide-current">1</span> / <span id="csTotal">6</span>
+                </div>
+
+                <div class="ig-progress" id="csProgress"></div>
+
+                <button class="gallery-arrow gallery-arrow--previous" type="button" aria-label="Previous CocoScan picture">
+                  <i class="ph ph-caret-left" aria-hidden="true"></i>
+                </button>
+                <button class="gallery-arrow gallery-arrow--next" type="button" aria-label="Next CocoScan picture">
+                  <i class="ph ph-caret-right" aria-hidden="true"></i>
+                </button>
+              </div>
+
+              <div class="ig-dots" id="csDots" role="tablist" aria-label="CocoScan navigation">
+                <button class="ig-dot active" data-slide="0" role="tab" aria-selected="true"  aria-label="Slide 1"></button>
+                <button class="ig-dot"        data-slide="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+                <button class="ig-dot"        data-slide="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+                <button class="ig-dot"        data-slide="3" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+                <button class="ig-dot"        data-slide="4" role="tab" aria-selected="false" aria-label="Slide 5"></button>
+                <button class="ig-dot"        data-slide="5" role="tab" aria-selected="false" aria-label="Slide 6"></button>
+              </div>
+            </div>
+
+            <div class="ig-info-col">
+              <h3 class="ig-title" id="cs-title">CocoScan</h3>
+              <p class="ig-thesis-label">
+                Coconut Disease Detection and Classification System using Computer Vision
+              </p>
+
+              <div class="ig-tag-row">
+                <span class="tag tag--orange">Computer Vision</span>
+                <span class="tag tag--teal">Image Classification</span>
+                <span class="tag tag--teal">Deep Learning</span>
+                <span class="tag tag--gray">Python</span>
+              </div>
+
+              <p class="ig-desc">
+                CocoScan is a project focused on detecting and classifying coconut diseases using
+                computer vision and deep learning techniques. It aims to help identify plant health
+                issues through image analysis, providing a practical tool for agricultural monitoring.
+              </p>
+
+              <h4 class="components-heading">System Components</h4>
+              <div class="components-list">
+                <div class="component">
+                  <div class="component-icon"><i class="ph ph-camera"></i></div>
+                  <div class="component-text">
+                    <strong>Image Capture</strong>
+                    <span>Supports capturing a leaf with the camera or choosing an existing image to upload.</span>
+                  </div>
+                </div>
+                <div class="component">
+                  <div class="component-icon"><i class="ph ph-brain"></i></div>
+                  <div class="component-text">
+                    <strong>Disease Classifier</strong>
+                    <span>Classifies leaf scans and displays a result with a confidence score.</span>
+                  </div>
+                </div>
+                <div class="component">
+                  <div class="component-icon"><i class="ph ph-chart-bar"></i></div>
+                  <div class="component-text">
+                    <strong>Results Display</strong>
+                    <span>Provides scan details, result information, recommendations, and scan history.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== FOODIE FINDER ===== -->
+        <article class="intelliguide-card" id="project-foodie-finder" aria-labelledby="ff-title">
+          <div class="ig-featured-badge">
+            <i class="ph ph-fork-knife"></i> Web Application
+          </div>
+
+          <div class="ig-grid">
+            <div class="ig-visual-col">
+              <div class="ig-slideshow ig-slideshow--landscape ig-slideshow--perspective" id="ffSlideshow">
+                <div class="ig-slides">
+                  <div class="ig-slide active">
+                    <img src="foodie%20finder/Screenshot%202026-10-20%20213322.png" alt="Foodie Finder landing page introducing local food discovery in Naval Proper" loading="eager" />
+                    <div class="ig-slide-caption"><i class="ph ph-house"></i> Landing page — Discover food in Naval Proper</div>
+                  </div>
+                  <div class="ig-slide">
+                    <img src="foodie%20finder/Screenshot%202026-10-20%20213356.png" alt="Foodie Finder account registration form" loading="lazy" />
+                    <div class="ig-slide-caption"><i class="ph ph-user-plus"></i> Create an account</div>
+                  </div>
+                  <div class="ig-slide">
+                    <img src="foodie%20finder/Screenshot%202026-10-20%20213415.png" alt="Foodie Finder account login screen" loading="lazy" />
+                    <div class="ig-slide-caption"><i class="ph ph-sign-in"></i> Sign in to an account</div>
+                  </div>
+                  <div class="ig-slide">
+                    <img src="foodie%20finder/Screenshot%202026-10-20%20213728.png" alt="Foodie Finder About page describing restaurant filters, open status, and price badges" loading="lazy" />
+                    <div class="ig-slide-caption"><i class="ph ph-info"></i> About — Discovery features</div>
+                  </div>
+                </div>
+
+                <div class="ig-screenshot-badge">
+                  <span class="detection-dot"></span>
+                  <span class="ig-badge-label">Landing page — Discover food in Naval Proper</span>
+                </div>
+
+                <div class="ig-slide-counter">
+                  <span class="ig-slide-current">1</span> / <span>4</span>
+                </div>
+
+                <div class="ig-progress"></div>
+
+                <button class="gallery-arrow gallery-arrow--previous" type="button" aria-label="Previous Foodie Finder picture">
+                  <i class="ph ph-caret-left" aria-hidden="true"></i>
+                </button>
+                <button class="gallery-arrow gallery-arrow--next" type="button" aria-label="Next Foodie Finder picture">
+                  <i class="ph ph-caret-right" aria-hidden="true"></i>
+                </button>
+              </div>
+
+              <div class="ig-dots" role="tablist" aria-label="Foodie Finder screenshot navigation">
+                <button class="ig-dot active" role="tab" aria-selected="true" aria-label="Landing page"></button>
+                <button class="ig-dot" role="tab" aria-selected="false" aria-label="Create an account"></button>
+                <button class="ig-dot" role="tab" aria-selected="false" aria-label="Sign in"></button>
+                <button class="ig-dot" role="tab" aria-selected="false" aria-label="About Foodie Finder"></button>
+              </div>
+            </div>
+
+            <div class="ig-info-col">
+              <h3 class="ig-title" id="ff-title">Foodie Finder</h3>
+              <p class="ig-thesis-label">
+                A local food and restaurant discovery platform for Naval Proper
+              </p>
+
+              <div class="ig-tag-row">
+                <span class="tag tag--orange">Web Application</span>
+                <span class="tag tag--teal">Restaurant Discovery</span>
+                <span class="tag tag--teal">Responsive UI</span>
+                <span class="tag tag--gray">Naval Proper</span>
+              </div>
+
+              <p class="ig-desc">
+                Foodie Finder is a web project for helping people discover restaurants, meals,
+                snacks, and drinks in Naval Proper. Its screenshots show the welcome page,
+                account registration and login screens, and an About page outlining its discovery
+                features.
+              </p>
+
+              <h4 class="components-heading">Project Features</h4>
+              <div class="components-list">
+                <div class="component">
+                  <div class="component-icon"><i class="ph ph-funnel"></i></div>
+                  <div class="component-text">
+                    <strong>Food Discovery</strong>
+                    <span>Describes category filters for finding food such as fast food, seafood, and desserts.</span>
+                  </div>
+                </div>
+                <div class="component">
+                  <div class="component-icon"><i class="ph ph-clock"></i></div>
+                  <div class="component-text">
+                    <strong>Restaurant Details</strong>
+                    <span>Highlights open-now status and price badges to help compare local places.</span>
+                  </div>
+                </div>
+                <div class="component">
+                  <div class="component-icon"><i class="ph ph-identification-card"></i></div>
+                  <div class="component-text">
+                    <strong>Account Screens</strong>
+                    <span>Includes registration and login interfaces alongside the main discovery experience.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+    <!-- ============================================================
+         EDUCATION
+    ============================================================ -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Academic Background</span>
+          <h2 class="section-title">My <span class="text-orange">Education</span></h2>
+        </div>
+
+        <div class="edu-layout">
+          <!-- Education card -->
+          <div class="edu-main-card">
+            <div class="edu-card-icon">
+              <i class="ph ph-graduation-cap"></i>
+            </div>
+            <div class="edu-card-body">
+              <div class="edu-status-row">
+              </div>
+              <h3 class="edu-degree">Bachelor of Science in Computer Science</h3>
+              <p class="edu-school">
+                <i class="ph ph-buildings"></i>
+                <em>[Biliran Province State University]</em>
+              </p>
+              <p class="edu-description">
+                Studying core computer science principles including algorithms, data structures,
+                software engineering, and systems design. Exploring emerging technologies through
+                academic projects, with a focus on artificial intelligence, computer vision,
+                and web development.
+              </p>
+              <div class="edu-highlights">
+                <div class="edu-highlight"><i class="ph ph-check-circle"></i> Artificial Intelligence &amp; Machine Learning</div>
+                <div class="edu-highlight"><i class="ph ph-check-circle"></i> Computer Vision &amp; Image Processing</div>
+                <div class="edu-highlight"><i class="ph ph-check-circle"></i> Web Development &amp; Software Engineering</div>
+                <div class="edu-highlight"><i class="ph ph-check-circle"></i> Academic Research &amp; Thesis Work</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Currently Learning -->
+          <div class="learning-col">
+            <h3 class="learning-title">
+              <i class="ph ph-lightning"></i>
+              Currently Learning &amp; Building
+            </h3>
+            <div class="learning-grid">
+              <div class="learning-card">
+                <i class="ph ph-code"></i>
+                <h4>Python Programming</h4>
+                <p>Deepening skills in Python for scripting, data handling, and AI applications.</p>
+              </div>
+              <div class="learning-card">
+                <i class="ph ph-brain"></i>
+                <h4>AI &amp; Computer Vision</h4>
+                <p>Studying deep learning models, object detection, and image classification.</p>
+              </div>
+              <div class="learning-card">
+                <i class="ph ph-globe"></i>
+                <h4>Web Development</h4>
+                <p>Building responsive interfaces with HTML, CSS, and JavaScript.</p>
+              </div>
+              <div class="learning-card">
+                <i class="ph ph-eye"></i>
+                <h4>IntelliGuide</h4>
+                <p>Developing an assistive real-time obstacle detection system as thesis project.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CERTIFICATES
+    ============================================================ -->
+    <section class="section certificates" id="certificates">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Achievements</span>
+          <h2 class="section-title">My <span class="text-orange">Certificates</span></h2>
+          <p class="section-sub">Certifications and recognitions earned through academic and professional development.</p>
+        </div>
+
+        <div class="cert-grid" id="certCarousel" role="region" aria-label="Certificates carousel" aria-roledescription="carousel" tabindex="0">
+          <div class="cert-card" data-img="certificates/1bf25d00-c293-4f31-8efa-0d6bebb9fadd.jpg">
+            <div class="cert-img-wrap">
+              <img src="certificates/1bf25d00-c293-4f31-8efa-0d6bebb9fadd.jpg" alt="Certificate 1" loading="lazy" />
+              <div class="cert-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-img="certificates/2b8751d1-3d4e-41d6-9955-9be6f7c3b4d8.jpg">
+            <div class="cert-img-wrap">
+              <img src="certificates/2b8751d1-3d4e-41d6-9955-9be6f7c3b4d8.jpg" alt="Certificate 2" loading="lazy" />
+              <div class="cert-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-img="certificates/6afb6bd9-b02d-465d-96b4-a9186a7c1a7f.jpg">
+            <div class="cert-img-wrap">
+              <img src="certificates/6afb6bd9-b02d-465d-96b4-a9186a7c1a7f.jpg" alt="Certificate 3" loading="lazy" />
+              <div class="cert-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-img="certificates/7bd4444f-6bea-4661-b2fd-50c30bd4f6a0.jpg">
+            <div class="cert-img-wrap">
+              <img src="certificates/7bd4444f-6bea-4661-b2fd-50c30bd4f6a0.jpg" alt="Certificate 4" loading="lazy" />
+              <div class="cert-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-img="certificates/8b284454-bbf2-42f5-9c5f-b8ca47d36ee9.jpg">
+            <div class="cert-img-wrap">
+              <img src="certificates/8b284454-bbf2-42f5-9c5f-b8ca47d36ee9.jpg" alt="Certificate 5" loading="lazy" />
+              <div class="cert-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-img="certificates/b0fcbb56-4dc5-4d9a-8cfa-95f334f67349.jpg">
+            <div class="cert-img-wrap">
+              <img src="certificates/b0fcbb56-4dc5-4d9a-8cfa-95f334f67349.jpg" alt="Certificate 6" loading="lazy" />
+              <div class="cert-overlay"><i class="ph ph-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <button class="gallery-arrow gallery-arrow--previous" type="button" aria-label="Previous certificate">
+            <i class="ph ph-caret-left" aria-hidden="true"></i>
+          </button>
+          <button class="gallery-arrow gallery-arrow--next" type="button" aria-label="Next certificate">
+            <i class="ph ph-caret-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="cert-lightbox" id="certLightbox" role="dialog" aria-modal="true" aria-label="Certificate image viewer" hidden>
+        <button class="cert-lightbox-close" id="certLightboxClose" type="button" aria-label="Close certificate viewer">
+          <i class="ph ph-x"></i>
+        </button>
+        <img src="" alt="Certificate full view" id="certLightboxImg" />
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PHOTOS
+    ============================================================ -->
+    <section class="section photos" id="photos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Personal Gallery</span>
+          <h2 class="section-title">My <span class="text-orange">Photos</span></h2>
+          <p class="section-sub">A collection of photos from my gallery.</p>
+        </div>
+
+        <div class="ig-slideshow ig-slideshow--photos" id="photoSlideshow" role="region" aria-label="Personal photo slideshow">
+          <div class="ig-slides">
+            <div class="ig-slide active">
+              <img src="Photos/029419a8-b34c-41a5-84fd-9a2a798db40c.jpg" alt="Photo 1 from Carl Marco's gallery" loading="eager" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 1 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/0ba54ee5-a27f-4aec-975f-62f8a6ed2571.jpg" alt="Photo 2 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 2 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/292fbc3b-1156-48dc-9d8e-d0d7a337bb84.jpg" alt="Photo 3 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 3 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/29453a3a-bad1-4c1b-86ba-e8d4602df18b.jpg" alt="Photo 4 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 4 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/470443b4-ab12-456b-a136-56788e6c7791.jpg" alt="Photo 5 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 5 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/49f252bd-a0ca-4364-b56b-adf6a9457557.jpg" alt="Photo 6 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 6 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/54541683-3696-4c7b-93cd-e1e6a7c9bcde.jpg" alt="Photo 7 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 7 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/5539221c-0290-40c0-a78e-c0eb4a88d341.jpg" alt="Photo 8 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 8 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/5588339e-628e-499e-815c-8b67e9ac2411.jpg" alt="Photo 9 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 9 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/58611f75-0d98-4848-8301-ff9f968c5ba4.jpg" alt="Photo 10 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 10 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/58b063b9-5c99-4447-afd2-d3aebd4771a0.jpg" alt="Photo 11 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 11 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/603b98b6-2b53-43d4-9cf5-afb23ada693a.jpg" alt="Photo 12 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 12 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/6f695adb-750e-4e85-874e-9f811b361f4e.jpg" alt="Photo 13 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 13 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/838abe23-8782-439c-ac26-c9003f291930.jpg" alt="Photo 14 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 14 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/910fd7c3-4eb7-4f5f-8ba8-50499af255b6.jpg" alt="Photo 15 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 15 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/b7ab1718-d04b-4557-b982-24ab73f8e266.jpg" alt="Photo 16 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 16 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/ba3d3466-2089-4c1b-85e9-4109ff20f6e5.jpg" alt="Photo 17 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 17 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/c200ed82-882d-4fd8-a936-3e28065c5cd0.jpg" alt="Photo 18 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 18 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/c402f632-2647-4a56-8244-f259ce6bed8c.jpg" alt="Photo 19 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 19 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/cc6c8e08-c0aa-44c1-b4dd-1a6f42b6af72.jpg" alt="Photo 20 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 20 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/dc300d46-e214-41b5-aa55-47f6adb2f33f.jpg" alt="Photo 21 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 21 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/e4a8e0ff-3f69-4557-bc19-b31369e727f3.jpg" alt="Photo 22 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 22 of 23</div>
+            </div>
+            <div class="ig-slide">
+              <img src="Photos/fbd6fac8-45ce-444b-839a-d92d1551fcf9.jpg" alt="Photo 23 from Carl Marco's gallery" loading="lazy" />
+              <div class="ig-slide-caption"><i class="ph ph-image"></i> Photo 23 of 23</div>
+            </div>
+          </div>
+
+          <div class="ig-screenshot-badge">
+            <span class="detection-dot"></span>
+            <span class="ig-badge-label">Personal Photo 1 of 23</span>
+          </div>
+
+          <div class="ig-slide-counter">
+            <span class="ig-slide-current">1</span> / <span>23</span>
+          </div>
+
+          <div class="ig-progress"></div>
+
+          <button class="gallery-arrow gallery-arrow--previous" type="button" aria-label="Previous photo">
+            <i class="ph ph-caret-left" aria-hidden="true"></i>
+          </button>
+          <button class="gallery-arrow gallery-arrow--next" type="button" aria-label="Next photo">
+            <i class="ph ph-caret-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Let's Connect</span>
+          <h2 class="section-title">Have a project in <span class="text-orange">mind?</span></h2>
+          <p class="section-sub">Open to conversations, collaboration, and opportunities to learn and build.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-col">
+            <div class="open-to-card">
+              <span class="open-dot" aria-hidden="true"></span>
+              <div>
+                <strong>Open to meaningful opportunities</strong>
+                <p>Collaboration, internships, and software or AI projects.</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="ph ph-envelope-simple"></i></div>
+              <div class="contact-detail">
+                <strong>Email</strong>
+                <a href="mailto:carlmarcovaporoso7@gmail.com" class="contact-link">carlmarcovaporoso7@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="ph ph-facebook-logo"></i></div>
+              <div class="contact-detail">
+                <strong>Facebook</strong>
+                <a href="https://www.facebook.com/carl.marco.regala.vaporoso" target="_blank" rel="noopener noreferrer" class="contact-link">facebook.com/carl.marco.regala.vaporoso</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="ph ph-instagram-logo"></i></div>
+              <div class="contact-detail">
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/hi_crlmrco/" target="_blank" rel="noopener noreferrer" class="contact-link">instagram.com/hi_crlmrco</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo" aria-label="CMV — Home">
+          <img class="brand-logo" src="LOGO/cmv-emblem-web.png" alt="" />
+        </a>
+        <p class="footer-fullname">Carl Marco Vaporoso</p>
+        <p class="footer-role">Computer Science Student | Aspiring Developer</p>
+        
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-projects-nav">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="#project-intelliguide">IntelliGuide</a></li>
+          <li><a href="#project-cocoscan">CocoScan</a></li>
+          <li><a href="#project-foodie-finder">Foodie Finder</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="footerYear"></span> Carl Marco Vaporoso. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ph ph-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
