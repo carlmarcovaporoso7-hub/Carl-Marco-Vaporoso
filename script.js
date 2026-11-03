@@ -602,7 +602,6 @@ document.addEventListener('DOMContentLoaded', function () {
   initProjectSlideshow('igSlideshow');
   initProjectSlideshow('csSlideshow');
   initProjectSlideshow('ffSlideshow');
-  initProjectSlideshow('photoSlideshow');
   initIGBtn();
   initCertificates();
   initContactForm();
